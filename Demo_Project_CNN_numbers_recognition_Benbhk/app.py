@@ -2,9 +2,7 @@ import streamlit as st
 from tensorflow.keras import layers, Sequential, models
 import pickle as pkl
 from streamlit_drawable_canvas import st_canvas
-import pandas as pd
 from PIL import Image
-import numpy as np
 from tensorflow.keras.backend import expand_dims
 
 image = Image.open('top.png')
@@ -18,9 +16,6 @@ model = pkl.load(open('../Demo_Project_CNN_numbers_recognition_Benbhk/Models/num
 
 def img_normalizer(X):
     return X/255-0.5
-
-
-
 
 st.title(" Handwriting Number Recognition ")
 st.subheader(" Benjamin Barre - Demo Project ")
