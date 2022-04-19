@@ -5,14 +5,14 @@ from streamlit_drawable_canvas import st_canvas
 from PIL import Image
 from tensorflow.keras.backend import expand_dims
 
-image = Image.open('top.png')
+image = Image.open('Demo_Project_CNN_numbers_recognition_Benbhk/top.png')
 
 # st.set_page_config(layout="wide")
 
 st.image(image)
 
 #load the model and function
-model = pkl.load(open('../Demo_Project_CNN_numbers_recognition_Benbhk/Models/numbers_recognition_model_V1', 'rb'))
+model = pkl.load(open('Demo_Project_CNN_numbers_recognition_Benbhk/Models/numbers_recognition_model_V1', 'rb'))
 
 def img_normalizer(X):
     return X/255-0.5

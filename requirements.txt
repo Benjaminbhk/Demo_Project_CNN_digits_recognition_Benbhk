@@ -19,16 +19,15 @@ yapf
 # API
 gcsfs
 google-cloud-storage
-tensorflow.keras
+tensorflow-cpu
 # mlflow
 s3fs
 streamlit
 
 # utilities
-PIL
+pillow
 streamlit_drawable_canvas
 six>=1.14
-pickle
 # joblib
 memoized-property
 # termcolor
