@@ -30,7 +30,7 @@ st.markdown('''---''')
 col1, col2 = st.columns(2)
 
 with col1:
-    
+
     st.subheader("Draw a number below")
     st.write("And click the arrow at the botum")
 
@@ -44,7 +44,7 @@ with col1:
         key="canvas"
     )
 with col2:
-    
+
     st.subheader("Model prediction")
     st.write("Around 95% of accuracy")
 
@@ -53,7 +53,7 @@ with col2:
     row = [num for num in range(0,280) if num % 10 == 1]
     col = [num for num in range(0,280) if num % 10 == 1]
     img = img[row,:]
-    img = img[:,col]    
+    img = img[:,col]
     X = img_normalizer(img)
     X_2 = expand_dims(X,axis=-1)
     X_2 = expand_dims(X_2,axis=0)

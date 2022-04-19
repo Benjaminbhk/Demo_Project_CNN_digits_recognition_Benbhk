@@ -5,9 +5,9 @@ twine
 wheel>=0.29
 
 # data science
-numpy
-pandas
-scikit-learn
+# numpy
+# pandas
+# scikit-learn
 
 # tests/linter
 black
@@ -19,11 +19,16 @@ yapf
 # API
 gcsfs
 google-cloud-storage
-mlflow
+tensorflow.keras
+# mlflow
 s3fs
+streamlit
 
 # utilities
+PIL
+streamlit_drawable_canvas
 six>=1.14
-joblib
+pickle
+# joblib
 memoized-property
-termcolor
+# termcolor
