@@ -5,4 +5,4 @@ COPY . /
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD streamlit run Demo_Project_CNN_numbers_recognition_Benbhk/app.py
+CMD streamlit run Demo_Project_CNN_digits_recognition_Benbhk/app.py

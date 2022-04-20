@@ -5,10 +5,10 @@ install_requirements:
 	@pip install -r requirements.txt
 
 check_code:
-	@flake8 scripts/* Demo_Projects_CNN_numbers_recognition_Benbhk/*.py
+	@flake8 scripts/* Demo_Projects_CNN_digits_recognition_Benbhk/*.py
 
 black:
-	@black scripts/* Demo_Projects_CNN_numbers_recognition_Benbhk/*.py
+	@black scripts/* Demo_Projects_CNN_digits_recognition_Benbhk/*.py
 
 test:
 	@coverage run -m pytest tests/*.py
@@ -22,8 +22,8 @@ clean:
 	@rm -f .coverage
 	@rm -fr */__pycache__ */*.pyc __pycache__
 	@rm -fr build dist
-	@rm -fr Demo_Projects_CNN_numbers_recognition_Benbhk-*.dist-info
-	@rm -fr Demo_Projects_CNN_numbers_recognition_Benbhk.egg-info
+	@rm -fr Demo_Projects_CNN_digits_recognition_Benbhk-*.dist-info
+	@rm -fr Demo_Projects_CNN_digits_recognition_Benbhk.egg-info
 
 install:
 	@pip install . -U
