@@ -1,9 +1,10 @@
 import streamlit as st
-from tensorflow.keras import layers, Sequential, models
+import numpy as np
+# from tensorflow.keras import layers, Sequential, models
 import pickle as pkl
 from streamlit_drawable_canvas import st_canvas
 from PIL import Image
-from tensorflow.keras.backend import expand_dims
+# from tensorflow.keras.backend import expand_dims
 
 image = Image.open('Demo_Project_CNN_digits_recognition_Benbhk/top.png')
 
@@ -49,14 +50,22 @@ with col2:
     st.write("Around 95% of accuracy")
 
     img = canvas_result.image_data[:,:,3]
+    print(f"1:{type(img)} - {img.shape}")
     img = 255 - img
     row = [num for num in range(0,280) if num % 10 == 1]
     col = [num for num in range(0,280) if num % 10 == 1]
     img = img[row,:]
+    print(f"2:{type(img)} - {img.shape}")
     img = img[:,col]
+    print(f"3:{type(img)} - {img.shape}")
     X = img_normalizer(img)
-    X_2 = expand_dims(X,axis=-1)
-    X_2 = expand_dims(X_2,axis=0)
+    print(f"4:{type(X)} - {X.shape}")
+    # X_2 = expand_dims(X,axis=-1)
+    X_2 = np.expand_dims(X, axis=-1)
+    print(f"5:{type(X_2)} - {X_2.shape}")
+    # X_2 = expand_dims(X_2,axis=0)
+    X_2 = np.expand_dims(X_2, axis=0)
+    print(f"6:{type(X_2)} - {X_2.shape}")
     X_2 = X_2*-1
     if len(set(list(X.flatten()))) == 1:
         st.markdown(f'''# Waiting for your drawing ... ''')

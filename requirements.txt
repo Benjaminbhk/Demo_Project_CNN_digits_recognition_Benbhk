@@ -10,16 +10,16 @@ wheel>=0.29
 # scikit-learn
 
 # tests/linter
-black
-coverage
-flake8
-pytest
-yapf
+# black
+# coverage
+# flake8
+# pytest
+# yapf
 
 # API
-gcsfs
-google-cloud-storage
-tensorflow-cpu
+# gcsfs
+# google-cloud-storage
+# tensorflow-lite
 # mlflow
 s3fs
 streamlit
@@ -29,5 +29,5 @@ pillow
 streamlit_drawable_canvas
 six>=1.14
 # joblib
-memoized-property
+# memoized-property
 # termcolor
