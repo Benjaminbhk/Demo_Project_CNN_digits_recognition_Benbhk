@@ -5,7 +5,6 @@
 raw_data/
 notebooks/
 old_models/
-py_files/
 *.csv
 **/__pycache__/
 .env

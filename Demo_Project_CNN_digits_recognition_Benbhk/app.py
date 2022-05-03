@@ -60,40 +60,25 @@ with col2:
     img = np.append(zero_row, img, axis=0)
     img = np.append(img, zero_row, axis=0)
 
-    # for i in range(0,180):
-    #     for j in range(0,2):
-    #         img[:, i].insert(0,0)
-
-    # row_of_zero = [0] * 280
-
-    # print(img)
-    # print(f"1:{type(img)} - {img.shape}")
     img = 255 - img
     row = [num for num in range(0,280) if num % 10 == 1]
     col = [num for num in range(0,280) if num % 10 == 1]
     img = img[row,:]
-    # print(f"2:{type(img)} - {img.shape}")
     img = img[:,col]
-    # print(f"3:{type(img)} - {img.shape}")
     X = img_normalizer(img)
-    # print(f"4:{type(X)} - {X.shape}")
-    # X_2 = expand_dims(X,axis=-1)
     X_2 = np.expand_dims(X, axis=-1)
-    # print(f"5:{type(X_2)} - {X_2.shape}")
-    # X_2 = expand_dims(X_2,axis=0)
     X_2 = np.expand_dims(X_2, axis=0)
-    # print(f"6:{type(X_2)} - {X_2.shape}")
     X_2 = X_2*-1
 
     if len(set(list(X.flatten()))) == 1:
         st.markdown(f'''# Waiting for your drawing ... ''')
     else:
         prediction = model.predict(X_2).tolist()[0]
-        if np.sum(X_2) < -320:
+        if np.sum(X_2) < -350:
             st.markdown(f'''### Your drawing is too small, pease rewrite your digit.''')
-        elif np.sum(X_2) > -50:
+        elif np.sum(X_2) > -200:
             st.markdown(f'''### Your drawing is too big, pease rewrite your digit.''')
-        elif max(prediction) <= 0.65 :
+        elif max(prediction) <= 0.80 :
             st.markdown(f'''### Please rewrite your digit, the model seems a bit confused with your drawing. ''')
         else:
             st.markdown(f'''# The model recognize a {prediction.index(max(prediction))}''')
@@ -110,4 +95,3 @@ with col2:
             st.markdown(f'''&emsp; 7  &emsp;➡&emsp;  {format(prediction[7]*100, '.2f')} % ''')
             st.markdown(f'''&emsp; 8  &emsp;➡&emsp;  {format(prediction[8]*100, '.2f')} % ''')
             st.markdown(f'''&emsp; 9  &emsp;➡&emsp;  {format(prediction[9]*100, '.2f')} % ''')
-    # st.write(len(set(list(X.flatten()))))
