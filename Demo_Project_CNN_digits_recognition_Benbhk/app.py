@@ -20,7 +20,7 @@ def img_normalizer(X):
 
 st.title(" Handwriting Digits Recognition ")
 st.subheader(" Benjamin Barre - Demo Project ")
-st.write('In this project, we will use the Modified National Institute of Standards and Technology database (MNIST), which is a large database of handwritten figures.')
+st.write('In this project, I used the Modified National Institute of Standards and Technology database (MNIST), which is a large database of handwritten figures.')
 st.write('The model recognizes handwritten digits (95% accurate).')
 st.write('Unfortunately the performance drops when the digits are written with the touchpad (70% accurate)')
 st.write("Link to the [github repo](https://github.com/Benjaminbhk/Demo_Project_CNN_digits_recognition_Benbhk)")
