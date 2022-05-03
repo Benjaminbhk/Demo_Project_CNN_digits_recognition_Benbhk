@@ -89,8 +89,10 @@ with col2:
         st.markdown(f'''# Waiting for your drawing ... ''')
     else:
         prediction = model.predict(X_2).tolist()[0]
-        if np.sum(X_2) < -350:
+        if np.sum(X_2) < -320:
             st.markdown(f'''### Your drawing is too small, pease rewrite your digit.''')
+        elif np.sum(X_2) > -50:
+            st.markdown(f'''### Your drawing is too big, pease rewrite your digit.''')
         elif max(prediction) <= 0.65 :
             st.markdown(f'''### Please rewrite your digit, the model seems a bit confused with your drawing. ''')
         else:
