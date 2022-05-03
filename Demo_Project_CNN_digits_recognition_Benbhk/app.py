@@ -84,12 +84,15 @@ with col2:
     X_2 = np.expand_dims(X_2, axis=0)
     # print(f"6:{type(X_2)} - {X_2.shape}")
     X_2 = X_2*-1
+
     if len(set(list(X.flatten()))) == 1:
         st.markdown(f'''# Waiting for your drawing ... ''')
     else:
         prediction = model.predict(X_2).tolist()[0]
-        if max(prediction) <= 0.65 :
-            st.markdown(f'''### Please rewrite your digit, the model seems a bit confused with your drawing ''')
+        if np.sum(X_2) < -350:
+            st.markdown(f'''### Your drawing is too small, pease rewrite your digit.''')
+        elif max(prediction) <= 0.65 :
+            st.markdown(f'''### Please rewrite your digit, the model seems a bit confused with your drawing. ''')
         else:
             st.markdown(f'''# The model recognize a {prediction.index(max(prediction))}''')
             st.markdown(f''' ''')
