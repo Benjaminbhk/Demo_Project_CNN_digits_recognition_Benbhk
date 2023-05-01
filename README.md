@@ -2,8 +2,9 @@
 
 This project demonstrates the power of convolutional neural networks (CNNs) for recognizing handwritten digits. The user interface is built using the Streamlit framework, which provides an interactive and user-friendly experience. The application is hosted on two platforms for easy access:
 
-1. Google Cloud Platform (GCP) using Container Registry and Cloud Run - longer launch time
-2. Heroku, deployed directly from Github - faster launch time
+1. Streamlit Deployment - fast launch time
+2. Google Cloud Platform (GCP) using Container Registry and Cloud Run - longer launch time
+
 
 ## Project Details
 
@@ -12,6 +13,8 @@ This project demonstrates the power of convolutional neural networks (CNNs) for 
 **Description**: A handwriting digits recognition app that uses a CNN to identify numbers drawn by users.
 
 **Streamlit application**: [https://benjaminb-demo-project-cnn-digits-recognition-benbhkapp-ui0wyj.streamlit.app/](https://benjaminb-demo-project-cnn-digits-recognition-benbhkapp-ui0wyj.streamlit.app/)
+
+**GCP application**: Down for the moment
 
 **Data Source**: Modified National Institute of Standards and Technology database (MNIST) - a large database of handwritten figures
 
