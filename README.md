@@ -42,24 +42,15 @@ To run the project locally, follow these steps:
 
 git clone https://github.com/Benjaminbhk/Demo_Project_CNN_digits_recognition_Benbhk.git
 
-arduino
-Copy code
-
 2. Create a virtual environment and install the required dependencies:
 
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-markdown
-Copy code
-
 3. Run the Streamlit app:
 
 streamlit run app.py
-
-vbnet
-Copy code
 
 4. Open a web browser and navigate to the local URL displayed in the terminal.
 
