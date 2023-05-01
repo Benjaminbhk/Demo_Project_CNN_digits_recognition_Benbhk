@@ -1,11 +1,68 @@
-## This project is a demonstration. It uses a convolutional neural network (CNN) to recognize a number. The interface is coded with Streamlit (framework). The project is available online on two platforms:
-- it has been put online on GCP (Container Registry and Cloud Run) - longer launch
-- it has been put online on Heroku (directly from Github) - faster launch
+# Handwriting Digits Recognition
 
-# Description
-- Name: Demo_Projects_CNN_digits_recognition_Benbhk
-- Description: A number recognition App
-- Link to the heroku application: https://digitsreco.herokuapp.com/
-- Link to the GCP application: https://digit-recognition-benbhk-uywov7wbna-ew.a.run.app/
-- Data Source: Modified National Institute of Standards and Technology database (MNIST) - a large database of handwritten figures
-- Personal page: https://inky-distance-393.notion.site/f8a4416f9dc64d9ab8c677a5a32ab03d
+This project demonstrates the power of convolutional neural networks (CNNs) for recognizing handwritten digits. The user interface is built using the Streamlit framework, which provides an interactive and user-friendly experience. The application is hosted on two platforms for easy access:
+
+1. Google Cloud Platform (GCP) using Container Registry and Cloud Run - longer launch time
+2. Heroku, deployed directly from Github - faster launch time
+
+## Project Details
+
+**Name**: Demo_Projects_CNN_digits_recognition_Benbhk
+
+**Description**: A handwriting digits recognition app that uses a CNN to identify numbers drawn by users.
+
+**Heroku application**: [https://digitsreco.herokuapp.com/](https://digitsreco.herokuapp.com/)
+
+**Google Cloud Platform application**: [https://digit-recognition-benbhk-uywov7wbna-ew.a.run.app/](https://digit-recognition-benbhk-uywov7wbna-ew.a.run.app/)
+
+**Data Source**: Modified National Institute of Standards and Technology database (MNIST) - a large database of handwritten figures
+
+**Personal page**: [https://inky-distance-393.notion.site/f8a4416f9dc64d9ab8c677a5a32ab03d](https://inky-distance-393.notion.site/f8a4416f9dc64d9ab8c677a5a32ab03d)
+
+## Features
+
+- Interactive user interface for drawing digits
+- Real-time prediction using a trained CNN model
+- Displays the confidence of the prediction for each digit
+- Responsive design for a seamless experience on various devices
+
+## Technologies
+
+- Python
+- TensorFlow for training and using the CNN model
+- Streamlit for creating the user interface
+- Google Cloud Platform for hosting the application
+- Heroku for hosting the application
+
+## Getting Started
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+git clone https://github.com/Benjaminbhk/Demo_Project_CNN_digits_recognition_Benbhk.git
+
+arduino
+Copy code
+
+2. Create a virtual environment and install the required dependencies:
+
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+markdown
+Copy code
+
+3. Run the Streamlit app:
+
+streamlit run app.py
+
+vbnet
+Copy code
+
+4. Open a web browser and navigate to the local URL displayed in the terminal.
+
+## Contributing
+
+Feel free to contribute to this project by submitting issues, pull requests, or providing feedback on the application. Your contributions are welcome and appreciated!
