@@ -13,8 +13,8 @@ st.image(image)
 
 # Load the model
 # model = pkl.load(open('Demo_Project_CNN_digits_recognition_Benbhk/Models/digits_recognition_model_V1.2', 'rb'))
-model = pkl.load(open('Models/digits_recognition_model_V1.2', 'rb'))
-# model = pkl.load(open('Demo_Project_CNN_digits_recognition_Benbhk/Demo_Project_CNN_digits_recognition_Benbhk/Models/digits_recognition_model_V1.2', 'rb'))
+# model = pkl.load(open('Models/digits_recognition_model_V1.2', 'rb'))
+model = pkl.load(open('Demo_Project_CNN_digits_recognition_Benbhk/Demo_Project_CNN_digits_recognition_Benbhk/Models/digits_recognition_model_V1.2', 'rb'))
 
 
 # Function to normalize image data
