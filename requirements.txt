@@ -25,6 +25,7 @@ tensorflow-cpu
 # mlflow
 s3fs
 streamlit
+zipfile
 
 # utilities
 pillow
