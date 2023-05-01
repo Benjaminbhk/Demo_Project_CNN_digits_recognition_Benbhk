@@ -16,9 +16,6 @@ st.image(image)
 
 # Load the model
 model = pkl.load(open('Demo_Project_CNN_digits_recognition_Benbhk/Models/digits_recognition_model_V2', 'rb'))
-# with zipfile.ZipFile('Demo_Project_CNN_digits_recognition_Benbhk/Models/my_model.zip', 'r') as zip_ref:
-#     with zip_ref.open('Demo_Project_CNN_digits_recognition_Benbhk/Models/my_model.pkl', 'r') as f:
-#         model = pkl.load(f)
 
 
 # model = pkl.load(open('Models/digits_recognition_model_V1.2', 'rb'))

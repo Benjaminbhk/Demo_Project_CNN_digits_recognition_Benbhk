@@ -11,9 +11,7 @@ This project demonstrates the power of convolutional neural networks (CNNs) for 
 
 **Description**: A handwriting digits recognition app that uses a CNN to identify numbers drawn by users.
 
-**Heroku application**: [https://digitsreco.herokuapp.com/](https://digitsreco.herokuapp.com/)
-
-**Google Cloud Platform application**: [https://digit-recognition-benbhk-uywov7wbna-ew.a.run.app/](https://digit-recognition-benbhk-uywov7wbna-ew.a.run.app/)
+**Streamlit application**: [https://benjaminb-demo-project-cnn-digits-recognition-benbhkapp-ui0wyj.streamlit.app/](https://benjaminb-demo-project-cnn-digits-recognition-benbhkapp-ui0wyj.streamlit.app/)
 
 **Data Source**: Modified National Institute of Standards and Technology database (MNIST) - a large database of handwritten figures
 
@@ -50,7 +48,7 @@ pip install -r requirements.txt
 
 3. Run the Streamlit app:
 
-streamlit run app.py
+streamlit run Demo_Project_CNN_digits_recognition_Benbhk/app.py
 
 4. Open a web browser and navigate to the local URL displayed in the terminal.
 
