@@ -7,7 +7,7 @@ requirements = [x.strip() for x in content if 'git+' not in x]
 
 setup(name='Demo_Project_CNN_digits_recognition_Benbhk',
       version="1.0",
-      description="Project Description",
+      description="This project is a demonstration. It uses a convolutional neural network (CNN) to recognize a number. The interface is coded with Streamlit (framework). The project is available online on two platforms:",
       packages=find_packages(),
       install_requires=requirements,
       test_suite='tests',
